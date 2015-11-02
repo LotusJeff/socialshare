@@ -1,0 +1,22 @@
+(function($) {
+    $(function() {
+    $('div.lotusjeff_socialshare_hover').each(function(idx) {
+		var lotusjeff_socialshare_l = '';for (j = 0; j < lotusjeff_socialshare_links.length; j++) lotusjeff_socialshare_l += '<a rel="nofollow" class="sprite' + lotusjeff_socialshare_hover_size + ' sprite-vertical ' + lotusjeff_socialshare_css[lotusjeff_socialshare_sort_order[j]] + lotusjeff_socialshare_hover_size + '" href=' + lotusjeff_socialshare_links[lotusjeff_socialshare_sort_order[j]] + ' target="_blank"></a>';$(this).html('<span id="socialshare_hover" class = "vertical" style="' + lotusjeff_socialshare_hover_align + '">' + lotusjeff_socialshare_l + '</span>');
+        var lotusjeff_socialshare_p = document.getElementById('socialshare_hover');function lotusjeff_socialshare_m() {var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);lotusjeff_socialshare_p.style.top = lotusjeff_socialshare_m2 + 'px';}lotusjeff_socialshare_m();window.onscroll = lotusjeff_socialshare_m;
+     });
+	$('div.lotusjeff_socialshare_navbar').each(function(idx) {
+		var lotusjeff_socialshare_l = '';for (j = 0; j < lotusjeff_socialshare_sort_order.length; j++) lotusjeff_socialshare_l += '<a rel="nofollow" class="sprite' + lotusjeff_socialshare_navbar_size + ' sprite-horizontal-' + lotusjeff_socialshare_navbar_size + ' ' + lotusjeff_socialshare_css[lotusjeff_socialshare_sort_order[j]] + lotusjeff_socialshare_navbar_size + '" href=' + lotusjeff_socialshare_links[lotusjeff_socialshare_sort_order[j]] + ' target="_blank"></a>';$(this).html('<div style="text-align:' + lotusjeff_socialshare_navbar_align + ';"><span id="lotusjeff_socialshare_navbar">' + lotusjeff_socialshare_l + '</span></div>');
+	 });
+	$('div.lotusjeff_socialshare_post').each(function(idx) {
+		var lotusjeff_socialshare_l = '';for (j = 0; j < lotusjeff_socialshare_links.length; j++) lotusjeff_socialshare_l += '<a rel="nofollow" class="sprite' + lotusjeff_socialshare_post_size + ' sprite-horizontal-' + lotusjeff_socialshare_post_size + ' ' + lotusjeff_socialshare_css[lotusjeff_socialshare_sort_order[j]] + lotusjeff_socialshare_post_size + '" href=' + lotusjeff_socialshare_links[lotusjeff_socialshare_sort_order[j]] + ' target="_blank"></a>';$(this).html('<div style="text-align:' + lotusjeff_socialshare_post_align + ';clear:both;"><span id="socialshare_post">' + lotusjeff_socialshare_l + '</span></div>');
+	 });
+	$('div.lotusjeff_socialshare_cust1').each(function(idx) {
+		var lotusjeff_socialshare_l = '';for (j = 0; j < lotusjeff_socialshare_links.length; j++) lotusjeff_socialshare_l += '<a rel="nofollow" class="sprite' + lotusjeff_socialshare_post_size + ' sprite-horizontal-' + lotusjeff_socialshare_post_size + ' ' + lotusjeff_socialshare_css[lotusjeff_socialshare_sort_order[j]] + lotusjeff_socialshare_post_size + '" href=' + lotusjeff_socialshare_links[lotusjeff_socialshare_sort_order[j]] + ' target="_blank"></a>';$(this).html('<div style="text-align:' + lotusjeff_socialshare_post_align + ';clear:both;"><span id="socialshare_post">' + lotusjeff_socialshare_l + '</span></div>');
+	 });
+	$('div.lotusjeff_socialshare_cust2').each(function(idx) {
+		var lotusjeff_socialshare_l = '';for (j = 0; j < lotusjeff_socialshare_links.length; j++) lotusjeff_socialshare_l += '<a rel="nofollow" class="sprite' + lotusjeff_socialshare_post_size + ' sprite-horizontal-' + lotusjeff_socialshare_post_size + ' ' + lotusjeff_socialshare_css[lotusjeff_socialshare_sort_order[j]] + lotusjeff_socialshare_post_size + '" href=' + lotusjeff_socialshare_links[lotusjeff_socialshare_sort_order[j]] + ' target="_blank"></a>';$(this).html('<div style="text-align:' + lotusjeff_socialshare_post_align + ';clear:both;"><span id="socialshare_post">' + lotusjeff_socialshare_l + '</span></div>');
+	 });
+	$('div.lotusjeff_socialshare_foot').each(function(idx) {var lotusjeff_socialshare_l = '';for (j = 0; j < lotusjeff_socialshare_links.length; j++) lotusjeff_socialshare_l += '<a rel="nofollow" class="sprite' + lotusjeff_socialshare_foot_size + ' sprite-horizontal-' + lotusjeff_socialshare_foot_size + ' ' + lotusjeff_socialshare_css[lotusjeff_socialshare_sort_order[j]] + lotusjeff_socialshare_foot_size + '" href=' + lotusjeff_socialshare_links[lotusjeff_socialshare_sort_order[j]] + ' target="_blank"></a>';$(this).html('<div style="text-align:' + lotusjeff_socialshare_foot_align + ';clear:both;"><span id="socialshare_foot">' + lotusjeff_socialshare_l + '</span></div>');
+	 });	
+    });
+})(jQuery);

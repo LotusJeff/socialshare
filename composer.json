@@ -1,0 +1,34 @@
+{
+	"name": "lotusjeff/socialshare",
+	"type": "phpbb-extension",
+	"description": "Social Sharing w/Dynamic Opengraph and Twitter Cards. Provides social sharing icons w/ supporting data.",
+	"homepage": "https://github.com/LotusJeff/socialshare",
+	"version": "0.9.1",
+	"keywords": ["phpbb", "extension", "facebook", "twitter", "linkedin", "pinterest", "opengraph"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Jeff Cocking (LotusJeff)",
+			"homepage": "http://www.cocking.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master",
+		"squizlabs/php_codesniffer": "2.*"
+	},
+	"extra": {
+		"display-name": "Social Sharing w/Dyanmic Opengraph Tags",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0-RC2,<3.2.*@dev"
+		},
+		"version-check": {
+			"host": "",
+			"directory": "",
+			"filename": ""
+		}
+	}
+}

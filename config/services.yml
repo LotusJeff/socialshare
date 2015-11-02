@@ -1,0 +1,10 @@
+services:
+    lotusjeff.socialshare.listener:
+        class: lotusjeff\socialshare\event\listener
+        arguments:
+            - @config
+            - @template
+            - @user
+            - @request
+        tags:
+            - { name: event.listener }

@@ -1,0 +1,327 @@
+<!-- INCLUDE overall_header.html -->
+
+<a id="maincontent"></a>
+
+<h1>{L_LOTUSJEFF_SOCIALSHARE_TITLE}</h1>
+<p>{LOTUSJEFF_SOCIALSHARE_VERSION}</p>
+
+<!-- IF S_ERROR -->
+	<div class="errorbox">
+		<h3>{L_WARNING}</h3>
+		<p>{ERROR_MSG}</p>
+	</div>
+<!-- ENDIF -->
+
+<form id="acp_board" method="post" action="{U_ACTION}">
+	
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_META_SETTINGS}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_facebook">{L_LOTUSJEFF_SOCIALSHARE_FACEBOOK}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_facebook" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_FACEBOOK -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_facebook" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_FACEBOOK -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_twitter">{L_LOTUSJEFF_SOCIALSHARE_TWITTER}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_twitter" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_TWITTER -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_twitter" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_TWITTER -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>		
+		<dl>
+			<dt><label for="lotusjeff_socialshare_first_image">{L_LOTUSJEFF_SOCIALSHARE_FIRST_IMAGE}{L_COLON}</label><br /><span>{L_LOTUSJEFF_SOCIALSHARE_FIRST_IMAGE_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_first_image" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_FIRST_IMAGE -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_FIRST_IMAGE_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_first_image" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_FIRST_IMAGE -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_LAST_IMAGE_YES}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_random_image">{L_LOTUSJEFF_SOCIALSHARE_RANDOM_IMAGE}{L_COLON}</label><br /><span>{L_LOTUSJEFF_SOCIALSHARE_RANDOM_IMAGE_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_random_image" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_RANDOM_IMAGE -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_RANDOM_IMAGE_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_random_image" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_RANDOM_IMAGE -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_DEFAULT_IMAGE_YES}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_default_image">{L_LOTUSJEFF_SOCIALSHARE_DEFAULT_IMAGE}{L_COLON}</label><br /><span>{L_LOTUSJEFF_SOCIALSHARE_DEFAULT_IMAGE_EXPLAIN}</span></dt>
+			<dd><input type="url" name="lotusjeff_socialshare_default_image" size="20" value="{LOTUSJEFF_SOCIALSHARE_DEFAULT_IMAGE}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_twitter_site">{L_LOTUSJEFF_SOCIALSHARE_TWITTER_SITE}{L_COLON}</label><br /><span>{L_LOTUSJEFF_SOCIALSHARE_TWITTER_SITE_EXPLAIN}</span></dt>
+			<dd><input type="text" name="lotusjeff_socialshare_twitter_site" size="20" value="{LOTUSJEFF_SOCIALSHARE_TWITTER_SITE}" /></dd>
+		</dl>						
+	</fieldset>
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_SOCIAL_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_social">{L_LOTUSJEFF_SOCIALSHARE_SOCIAL}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_social" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_SOCIAL -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_social" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_SOCIAL -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_BUTTON_CONFIG}</legend>
+		<dl>
+			<table class="table1">
+				<col class="col1" /><col class="col2" /><col class="col2" />
+			<thead>
+			<tr>
+				<th style="width: 50%">{L_LOTUSJEFF_SOCIALSHARE_BUTTON_TYPE}</th>
+				<th>{L_YES}</th>
+				<th>{L_NO}</th>
+				<th>{L_LOTUSJEFF_SOCIALSHARE_BUTTON_SEQUENCE}</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_blogger_icon"><div class="sprite sprite-horizontal sprite-blogger"></div>{L_LOTUSJEFF_SOCIALSHARE_BLOGGER_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_blogger_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_BLOGGER_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_blogger_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_BLOGGER_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_blogger_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_BLOGGER_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_delicious_icon"><div class="sprite sprite-horizontal sprite-delicious"></div>{L_LOTUSJEFF_SOCIALSHARE_DELICIOUS_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_delicious_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_DELICIOUS_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_delicious_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_DELICIOUS_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_delicious_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_DELICIOUS_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_digg_icon"><div CLASS="sprite sprite-horizontal sprite-digg"></div>{L_LOTUSJEFF_SOCIALSHARE_DIGG_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_digg_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_DIGG_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_digg_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_DIGG_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_digg_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_DIGG_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_facebook_icon"><div CLASS="sprite sprite-horizontal sprite-facebook"></div>{L_LOTUSJEFF_SOCIALSHARE_FACEBOOK_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_facebook_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_FACEBOOK_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_facebook_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_FACEBOOK_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_facebook_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_FACEBOOK_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_google_icon"><div CLASS="sprite sprite-horizontal sprite-google"></div>{L_LOTUSJEFF_SOCIALSHARE_GOOGLE_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_google_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_GOOGLE_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_google_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_GOOGLE_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_google_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_GOOGLE_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_linkedin_icon"><div CLASS="sprite sprite-horizontal sprite-linkedin"></div>{L_LOTUSJEFF_SOCIALSHARE_LINKEDIN_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_linkedin_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_LINKEDIN_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_linkedin_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_LINKEDIN_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_linkedin_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_LINKEDIN_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_myspace_icon"><div CLASS="sprite sprite-horizontal sprite-myspace"></div>{L_LOTUSJEFF_SOCIALSHARE_MYSPACE_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_myspace_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_MYSPACE_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_myspace_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_MYSPACE_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_myspace_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_MYSPACE_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_odk_icon"><div CLASS="sprite sprite-horizontal sprite-odk"></div>{L_LOTUSJEFF_SOCIALSHARE_ODK_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_odk_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_ODK_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_odk_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_ODK_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_odk_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_ODK_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_pinterest_icon"><div CLASS="sprite sprite-horizontal sprite-pinterest"></div>{L_LOTUSJEFF_SOCIALSHARE_PINTEREST_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_pinterest_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_PINTEREST_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_pinterest_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_PINTEREST_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_pinterest_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_PINTEREST_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_redidit_icon"><div CLASS="sprite sprite-horizontal sprite-redidit"></div>{L_LOTUSJEFF_SOCIALSHARE_REDIDIT_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_redidit_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_REDIDIT_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_redidit_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_REDIDIT_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_redidit_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_REDIDIT_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_stumble_icon"><div CLASS="sprite sprite-horizontal sprite-stumble"></div>{L_LOTUSJEFF_SOCIALSHARE_STUMBLE_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_stumble_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_STUMBLE_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_stumble_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_STUMBLE_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_stumble_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_STUMBLE_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_tumbler_icon"><div CLASS="sprite sprite-horizontal sprite-tumbler"></div>{L_LOTUSJEFF_SOCIALSHARE_TUMBLER_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_tumbler_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_TUMBLER_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_tumbler_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_TUMBLER_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_tumbler_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_TUMBLER_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_twitter_icon"><div CLASS="sprite sprite-horizontal sprite-twitter"></div>{L_LOTUSJEFF_SOCIALSHARE_TWITTER_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_twitter_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_TWITTER_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_twitter_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_TWITTER_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_twitter_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_TWITTER_ICON_SEQ}"/></td>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_vk_icon"><div CLASS="sprite sprite-horizontal sprite-vk"></div>{L_LOTUSJEFF_SOCIALSHARE_VK_ICON}{L_COLON}</label></strong></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_vk_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_VK_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_vk_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_VK_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_vk_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_VK_ICON_SEQ}"/></td>
+				</tr>
+				<tr>
+					<td><strong><label for="lotusjeff_socialshare_rss_icon"><div CLASS="sprite sprite-horizontal sprite-rss"></div>{L_LOTUSJEFF_SOCIALSHARE_RSS_ICON}{L_COLON}</label></strong><br />
+					<label for="lotusjeff_socialshare_default_rss">{L_LOTUSJEFF_SOCIALSHARE_DEFAULT_RSS}{L_COLON}</label><input type="url" name="lotusjeff_socialshare_default_rss" size="20" value="{LOTUSJEFF_SOCIALSHARE_DEFAULT_RSS}" /></td>
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_rss_icon" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_RSS_ICON -->checked="checked"<!-- ENDIF -->/></td> 
+					<td style="text-align: center;"><input type="radio" class="radio" name="lotusjeff_socialshare_rss_icon" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_RSS_ICON -->checked="checked"<!-- ENDIF -->/></td>
+					<td style="text-align: center;"><input type="number" name="lotusjeff_socialshare_rss_icon_seq" min="1" value="{LOTUSJEFF_SOCIALSHARE_RSS_ICON_SEQ}"/></td>
+				</tr>
+				</tr>																								
+			</tbody>
+			</table>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_HOVER_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_hover">{L_LOTUSJEFF_SOCIALSHARE_HOVER}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_hover" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_HOVER -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_hover" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_HOVER -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_hover_side">{L_LOTUSJEFF_SOCIALSHARE_HOVER_SIDE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" class="radio" name="lotusjeff_socialshare_hover_side" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_HOVER_SIDE == 1 -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_LEFT_HOVER}</label><br /> 
+				<label><input type="radio" class="radio" name="lotusjeff_socialshare_hover_side" value="2" <!-- IF LOTUSJEFF_SOCIALSHARE_HOVER_SIDE == 2 -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_LEFT_MARGIN}</label><br /> 
+				<label><input type="radio" class="radio" name="lotusjeff_socialshare_hover_side" value="0" <!-- IF LOTUSJEFF_SOCIALSHARE_HOVER_SIDE == 3 -->checked="checked"<!-- ENDIF -->/> {L_LOTUSJEFF_SOCIALSHARE_RIGHT_HOVER}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_hover_size">{L_LOTUSJEFF_SOCIALSHARE_SIZE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_hover_size" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_HOVER_SIZE == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_32}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_hover_size" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_HOVER_SIZE == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_24}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_hover_size" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_HOVER_SIZE == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_16}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_hover_margin">{L_LOTUSJEFF_SOCIALSHARE_HOVER_MARGIN}{L_COLON}</label><br /><span>{L_LOTUSJEFF_SOCIALSHARE_HOVER_MARGIN_EXPLAIN}</span></dt>
+			<dd><input type="num" name="lotusjeff_socialshare_hover_margin" size="5" value="{LOTUSJEFF_SOCIALSHARE_HOVER_MARGIN}" /></dd>
+		</dl>		
+	</fieldset>
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_NAVBAR_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_navbar">{L_LOTUSJEFF_SOCIALSHARE_NAVBAR}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_navbar" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_navbar" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_NAVBAR -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_navbar_align">{L_LOTUSJEFF_SOCIALSHARE_ALIGN}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_navbar_align" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR_ALIGN == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_LEFT}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_navbar_align" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR_ALIGN == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_CENTER}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_navbar_align" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR_ALIGN == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_RIGHT}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_navbar_size">{L_LOTUSJEFF_SOCIALSHARE_SIZE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_navbar_size" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR_SIZE == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_32}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_navbar_size" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR_SIZE == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_24}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_navbar_size" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_NAVBAR_SIZE == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_16}</label>
+			</dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_POST_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_post">{L_LOTUSJEFF_SOCIALSHARE_POST}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_post" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_POST -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_post" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_POST -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_post_align">{L_LOTUSJEFF_SOCIALSHARE_ALIGN}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_post_align" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_POST_ALIGN == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_LEFT}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_post_align" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_POST_ALIGN == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_CENTER}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_post_align" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_POST_ALIGN == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_RIGHT}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_post_size">{L_LOTUSJEFF_SOCIALSHARE_SIZE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_post_size" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_POST_SIZE == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_32}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_post_size" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_POST_SIZE == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_24}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_post_size" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_POST_SIZE == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_16}</label>
+			</dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_FOOT_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_foot">{L_LOTUSJEFF_SOCIALSHARE_FOOT}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_foot" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_FOOT -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_foot" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_FOOT -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_foot_align">{L_LOTUSJEFF_SOCIALSHARE_ALIGN}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_foot_align" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_FOOT_ALIGN == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_LEFT}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_foot_align" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_FOOT_ALIGN == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_CENTER}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_foot_align" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_FOOT_ALIGN == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_RIGHT}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_foot_size">{L_LOTUSJEFF_SOCIALSHARE_SIZE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_foot_size" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_FOOT_SIZE == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_32}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_foot_size" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_FOOT_SIZE == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_24}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_foot_size" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_FOOT_SIZE == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_16}</label>
+			</dd>
+		</dl>
+	</fieldset>		
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_CUST1_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust1">{L_LOTUSJEFF_SOCIALSHARE_CUST_EXPLAIN}{L_COLON}</label></dt>
+			<dd><label for="lotusjeff_socialshare_cust1">&lt;!-- IF S_LOTUSJEFF_SOCIALSHARE_CUST1 and S_LOTUSJEFF_SOCIALSHARE_SOCIAL --&gt;<br />&lt;div class=&quot;lotusjeff_socialshare_cust1 lotusjeff_socialshare_horizontal&quot;&gt;&lt;/div&gt;<br />&lt;!-- ENDIF --&gt;</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust1">{L_LOTUSJEFF_SOCIALSHARE_CUST1}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_cust1" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_CUST1 -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_cust1" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_CUST1 -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>		
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust1_align">{L_LOTUSJEFF_SOCIALSHARE_ALIGN}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_cust1_align" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST1_ALIGN == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_LEFT}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust1_align" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST1_ALIGN == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_CENTER}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust1_align" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST1_ALIGN == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_RIGHT}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust1_size">{L_LOTUSJEFF_SOCIALSHARE_SIZE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_cust1_size" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST1_SIZE == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_32}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust1_size" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST1_SIZE == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_24}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust1_size" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST1_SIZE == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_16}</label>
+			</dd>
+		</dl>
+	</fieldset>		
+	<fieldset>
+		<legend>{L_LOTUSJEFF_SOCIALSHARE_CUST2_CONFIG}</legend>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust1">{L_LOTUSJEFF_SOCIALSHARE_CUST_EXPLAIN}{L_COLON}</label></dt>
+			<dd><label for="lotusjeff_socialshare_cust1">&lt;!-- IF S_LOTUSJEFF_SOCIALSHARE_CUST2 and S_LOTUSJEFF_SOCIALSHARE_SOCIAL --&gt;<br />&lt;div class=&quot;lotusjeff_socialshare_cust2 lotusjeff_socialshare_horizontal&quot;&gt;&lt;/div&gt;<br />&lt;!-- ENDIF --&gt;</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust2">{L_LOTUSJEFF_SOCIALSHARE_CUST2}{L_COLON}</label></dt>
+			<dd><input type="radio" class="radio" name="lotusjeff_socialshare_cust2" value="1" <!-- IF LOTUSJEFF_SOCIALSHARE_CUST2 -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="lotusjeff_socialshare_cust2" value="0" <!-- IF not LOTUSJEFF_SOCIALSHARE_CUST2 -->checked="checked"<!-- ENDIF -->/> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust2_align">{L_LOTUSJEFF_SOCIALSHARE_ALIGN}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_cust2_align" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST2_ALIGN == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_LEFT}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust2_align" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST2_ALIGN == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_CENTER}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust2_align" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST2_ALIGN == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_RIGHT}</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="lotusjeff_socialshare_cust2_size">{L_LOTUSJEFF_SOCIALSHARE_SIZE}{L_COLON}</label></dt>
+			<dd>
+				<label><input type="radio" name="lotusjeff_socialshare_cust2_size" class="radio" value="0"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST2_SIZE == 0 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_32}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust2_size" class="radio" value="1"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST2_SIZE == 1 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_24}</label><br />
+				<label><input type="radio" name="lotusjeff_socialshare_cust2_size" class="radio" value="2"<!-- IF LOTUSJEFF_SOCIALSHARE_CUST2_SIZE == 2 --> checked="checked"<!-- ENDIF --> /> {L_LOTUSJEFF_SOCIALSHARE_ICON_SIZE_16}</label>
+			</dd>
+		</dl>
+	</fieldset>		
+	<p class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+	</p>
+{S_FORM_TOKEN}
+</form>
+<!-- INCLUDE overall_footer.html -->
