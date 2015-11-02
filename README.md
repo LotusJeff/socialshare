@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/LotusJeff/socialshare.svg?branch=master)](https://travis-ci.org/LotusJeff/socialshare.svg?branch=master)
+
 # Social Sharing with OpenGraph Metatags (Facebook) for phpBB 3.1
 
 Extension for phpBB 3.1 to facilitate social media posting. This extension supports 15 different social media sites. Supports dynamically creating Opengraph tags to provide Title, Description, Images and URL for all pages.
@@ -55,10 +57,10 @@ cd phpBB3  (base forum install)
 git clone https://github.com/LotusJeff/socialshare.git ext/lotusjeff/socialshare/
 ```
 
-### 2. activate
+## Activate
 - Go to ACP -> tab Customise -> Manage extensions -> enable Social Share w/ Dynamic OpenGraph Tags
 
-### 3. configure
+## Configure
 
 - Goto ACP -> Extensions -> Social Sharing
 
