@@ -5,16 +5,16 @@ Extension for phpBB 3.1 to facilitate social media posting. This extension suppo
 ##	Features
 ###	Social Sharing
 - Ability to have 6 different sharing locations
-	- All or none can be turned on.
+	- Each location can be turned on or off. Any combination will work.
 	- Each location can have different sized icons (32px by 32px, 24px by 24px, 16px by 16px)
 	- Each location can have different alignment (Left, Centered, Right)
-	- 4 locations are predefined.
+	- 4 locations are predefined. (ProSilver Templates)
 		- Navigation bar in alignment with breadcrumbs
 		- First post of each Topic page.
 		- Footer of Page
 		- Hover outside of content (left edge of browser, right edge of browser, left of forum content, hieght of hover from top of browser)
 	- 2 locations are user defined
-		- Code is provided to add social share icons within your theme at your choice
+		- Code is provided to add social share icons within your theme at your preferred locations
 		- Ability to control icon size and alignment from within settings
 	- Ability to have up to 15 different social media sharing sites
 		- Blogger, Delicious, Digg, Facebook, Google Plus, Linkedin, Myspace, Odnoklassniki, Pinterest, Redidit, Stumbleupon, Tumbler, Twitter, VK and RSS.
@@ -22,12 +22,12 @@ Extension for phpBB 3.1 to facilitate social media posting. This extension suppo
 		- Change order of social media icons from settings.
 
 ###	OpenGraph MetaTags
-	- Ability to create Opengraph tags for all pages
-	- Ability to create Twitter Cards for all pages
-	- Ability to choose first or last image of page to use.
-	- Ability to choose a random image or a default image if no images are found on page.
+- Ability to create Opengraph tags for all pages
+- Ability to create Twitter Cards for all pages
+- Ability to choose first or last image of page to use.
+- Ability to choose a random image or a default image if no images are found on page.
 
-### Screen Shots
+## Screen Shots
 ![Topic Page - Eaxmple One] (example1.jpg) 
 `Topic Page - Example One`
 ![Topic Page - Example Two] (example2.jpg) 
@@ -43,10 +43,10 @@ Extension for phpBB 3.1 to facilitate social media posting. This extension suppo
 ## Installation
 
 #### Download Method
-	- [Download the latest release](https://github.com/LotusJeff/socialshare) and unzip it.
-	- Unzip the downloaded files and copy it to the `ext` directory of your phpBB board. The directory strcuture should be phpBB3/ext/lotusjeff/socialshare
-	- Navigate in the ACP to `Customise -> Manage extensions`.
-	- Look for Social Share w/ Dynamic OpenGraph Tags under the Disabled Extensions list, and click `Enable` link.
+- [Download the latest release](https://github.com/LotusJeff/socialshare) and unzip it.
+- Unzip the downloaded files and copy it to the `ext` directory of your phpBB board. The directory strcuture should be phpBB3/ext/lotusjeff/socialshare
+- Navigate in the ACP to `Customise -> Manage extensions`.
+- Look for Social Share w/ Dynamic OpenGraph Tags under the Disabled Extensions list, and click `Enable` link.
 
 #### Git Clone Method
 
@@ -56,27 +56,27 @@ git clone https://github.com/LotusJeff/socialshare.git ext/lotusjeff/socialshare
 ```
 
 ### 2. activate
-	- Go to ACP -> tab Customise -> Manage extensions -> enable Social Share w/ Dynamic OpenGraph Tags
+- Go to ACP -> tab Customise -> Manage extensions -> enable Social Share w/ Dynamic OpenGraph Tags
 
 ### 3. configure
 
-	- Goto ACP -> Extensions -> Social Sharing
+- Goto ACP -> Extensions -> Social Sharing
 
 ## Update
 
-	- Go to ACP -> tab Customise -> Manage extensions -> disable Social Share w/ Dynamic OpenGraph Tags
+- Go to ACP -> tab Customise -> Manage extensions -> disable Social Share w/ Dynamic OpenGraph Tags
 
 ```
 cd phpBB3/ext/lotusjeff/socialshare
 git pull
 ```
 
-	- Go to ACP -> tab Customise -> Manage extensions -> enable Social Share w/ Dynamic OpenGraph Tags
+- Go to ACP -> tab Customise -> Manage extensions -> enable Social Share w/ Dynamic OpenGraph Tags
 
 ## Uninstallation
-	- Navigate in the ACP to `Customise -> Manage extensions`.
-	- Click the `Disable` link for Fancybox.
-	- To permanently uninstall, click `Delete Data`, then delete the `socialshare` folder from `phpBB3/ext/lotusjeff/`.
+- Navigate in the ACP to `Customise -> Manage extensions`.
+- Click the `Disable` link for Fancybox.
+- To permanently uninstall, click `Delete Data`, then delete the `socialshare` folder from `phpBB3/ext/lotusjeff/`.
 
 ## License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
