@@ -64,6 +64,15 @@ git clone https://github.com/LotusJeff/socialshare.git ext/lotusjeff/socialshare
 
 ## Update
 
+#### Download Installation Used
+
+- Go to ACP -> tab Customise -> Manage extensions -> disable Social Share w/ Dynamic OpenGraph Tags
+- Delete files in ext/lotusjeff/socialshare
+- Download new files. Unzip and copy files to phpBB3/ext/lotusjeff/socialshare
+- Go to ACP -> tab Customise -> Manage extensions -> enable Social Share w/ Dynamic OpenGraph Tags
+
+#### Git Clone Installation Used
+
 - Go to ACP -> tab Customise -> Manage extensions -> disable Social Share w/ Dynamic OpenGraph Tags
 
 ```
