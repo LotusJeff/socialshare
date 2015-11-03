@@ -258,8 +258,8 @@ class listener implements EventSubscriberInterface
 					break;
 				}
 				$template_vars .= "var lotusjeff_socialshare_m2 = '".$this->config['lotusjeff_socialshare_hover_margin']."';";
-				$template_vars .= "var lotusjeff_socialshare_rss_link = '".$this->config['lotusjeff_socialshare_default_rss']."';";
 			}
+			$template_vars .= "var lotusjeff_socialshare_rss_link = '".$this->config['lotusjeff_socialshare_default_rss']."';";
 			//create sequence structure for icons.
 			if ($this->config['lotusjeff_socialshare_blogger_icon'])
 			{
