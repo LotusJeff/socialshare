@@ -430,14 +430,17 @@ class listener implements EventSubscriberInterface
 				$pulled_links = $this->getContents($value['post_text'],$open_tag,$close_tag);
 				$master_img_links = array_merge($master_img_links, $pulled_links);
 			}
-			if ($this->config['lotusjeff_socialshare_first_image'] == 1)
+			if (!empty($master_img_links))
 			{
-				//First image
-				$dynamic_image = max($master_img_links);
-			}
-			else
-			{
-				$dynamic_image = min($master_img_links);
+				if ($this->config['lotusjeff_socialshare_first_image'] == 1)
+				{
+					//First image
+					$dynamic_image = max($master_img_links);
+				}
+				else
+				{
+					$dynamic_image = min($master_img_links);
+				}
 			}
 		}
 		if (($topic_data['topic_attachment'] == 1) && (empty($dynamic_image)))
