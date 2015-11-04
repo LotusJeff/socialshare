@@ -5,8 +5,7 @@
 .vertical {position:fixed;z-index:9999;}
 .sprite-horizontal-32 {display:inline-block;margin:0 6px 6px;}
 .sprite-horizontal-24 {display:inline-block;margin:0 4px 6px;}
-.sprite-horizontal-16 {display:inline-block;margin:0 3px 6px;}
-.lotusjeff_socialshare_navbar {padding-top: 3px;}
+.sprite-horizontal-16 {display:inline-block;margin:0 3px -3px;}
 .sprite-blogger32 {width: 32px;height: 32px;background-position: -0px 0;} 
 .sprite-delicious32 {width: 32px;height: 32px;background-position: -32px 0;}
 .sprite-digg32 {width: 32px;height: 32px;background-position: -64px 0;}

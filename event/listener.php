@@ -360,6 +360,7 @@ class listener implements EventSubscriberInterface
 			'S_LOTUSJEFF_SOCIALSHARE_CUST1'			=> $this->config['lotusjeff_socialshare_cust1'],
 			'S_LOTUSJEFF_SOCIALSHARE_CUST2'			=> $this->config['lotusjeff_socialshare_cust2'],
 			'S_LOTUSJEFF_SOCIALSHARE_SOCIAL'		=> $this->config['lotusjeff_socialshare_social'],
+			'S_LOTUSJEFF_SOCIALSHARE_NAVBAR_ALIGN'	=> $this->config['lotusjeff_socialshare_navbar_align'],
 			)
 		);
 	}
@@ -400,7 +401,7 @@ class listener implements EventSubscriberInterface
 		*/
 		$dynamic_image = null;
 		$base_url = generate_board_url()."/download/file.php?id=";
-		$append_url = "&t=";
+		$append_url = "&amp;t=";
 		if (!empty($attachments))
 		{
 			if ($this->config['lotusjeff_socialshare_first_image'] == 1)
@@ -549,7 +550,7 @@ class listener implements EventSubscriberInterface
 		$row = $db->sql_fetchrow($result);
 		$db->sql_freeresult($result);
 		$base_url = generate_board_url()."/download/file.php?id=";
-		$append_url = "&t=1";
+		$append_url = "&amp;t=1";
 		$dynamic_image = $base_url.$row['attach_id'].$append_url;
 		return $dynamic_image;
 	}
