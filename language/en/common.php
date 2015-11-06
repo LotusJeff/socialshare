@@ -22,5 +22,5 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'LOTUSJEFF_SOCIALSHARE_OPENGRAPH_LOCALE'		=> 'en-US',
+	'LOTUSJEFF_SOCIALSHARE_OPENGRAPH_LOCALE'		=> 'en_US',
 ));

@@ -404,12 +404,23 @@ class listener implements EventSubscriberInterface
 		$append_url = "&amp;t=";
 		if (!empty($attachments))
 		{
+			foreach ($attachments as $key => $value)
+			{
+				foreach ($value as $key2 => $value2)
+				{
+					if (substr($value2['mimetype'],0,5) !== 'image' )
+					{
+						unset($attachments[$key][$key2]);
+					}
+				}
+			}
 			if ($this->config['lotusjeff_socialshare_first_image'] == 1)
 			{
 				//first image
-				$set_postition = min(array_keys($attachments));
-				$attach_id = $attachments[$set_postition]['0']['attach_id'];
-				$thumbnail = $attachments[$set_postition]['0']['thumbnail'];
+				$min_post = min(array_keys($attachments));
+				$min_image = min(array_keys($attachments[$min_post]));
+				$attach_id = $attachments[$min_post][$min_image]['attach_id'];
+				$thumbnail = $attachments[$min_post][$min_image]['thumbnail'];
 			}
 			else
 			{
