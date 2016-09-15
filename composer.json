@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Social Sharing w/Dynamic Opengraph and Twitter Cards. Provides social sharing icons w/ supporting data.",
 	"homepage": "https://github.com/LotusJeff/socialshare",
-	"version": "0.9.1",
+	"version": "0.9.2",
 	"keywords": ["phpbb", "extension", "facebook", "twitter", "linkedin", "pinterest", "opengraph"],
 	"license": "GPL-2.0",
 	"authors": [
