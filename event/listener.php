@@ -402,6 +402,9 @@ class listener implements EventSubscriberInterface
 		$dynamic_image = null;
 		$base_url = generate_board_url()."/download/file.php?id=";
 		$append_url = "&amp;t=";
+		/**
+		*  Removes non-image attachments
+		**/
 		if (!empty($attachments))
 		{
 			foreach ($attachments as $key => $value)
@@ -413,7 +416,14 @@ class listener implements EventSubscriberInterface
 						unset($attachments[$key][$key2]);
 					}
 				}
+				if (count($attachments[$key]) < 1)
+				{
+					unset($attachments[$key]);
+				}
 			}
+		}
+		if (!empty($attachments))
+		{
 			if ($this->config['lotusjeff_socialshare_first_image'] == 1)
 			{
 				//first image
