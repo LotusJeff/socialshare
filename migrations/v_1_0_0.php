@@ -2,7 +2,7 @@
 /**
  *
  * Dynamic Opengraph and Twitter Metatags extension for the phpBB Forum Software package.
- *
+ * 
  * @copyright (c) 2015 Jeff Cocking
  * @license GNU General Public License, version 2 (GPL-2.0)
  *
