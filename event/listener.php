@@ -586,9 +586,16 @@ class listener implements EventSubscriberInterface
 	{
 		$text = censor_text($text);
 		strip_bbcode($text);
+		// removes html links left after strip bb codes
+		$text = preg_replace("/http.*?html/","",$text);
+		// removes any links left by other bbcodes or extensions
+		$text = preg_replace("/<a.*?href.*?\/a>/","",$text);
+		// removes quotes, backslashes, tabs, line feeds
 		$text = str_replace(array("&quot;", "/", "\n", "\t", "\r"), ' ', $text);
+		// removes images or other links
 		$text = preg_replace(array("|http(.*)jpg|isU", "@(http(s)?://)?(([a-z0-9.-]+)?[a-z0-9-]+(!?\.[a-z]{2,4}))@"), ' ', $text);
 		$text = preg_replace("/[^A-ZА-ЯЁ.,-–?]+/ui", " ", $text);
+		// removes any left over bb codes
 		$text = preg_replace("/\[(.*)?\](.*)?\[(.*)?\]/", ' ', $text);
 		if (strlen($text) > 180)
 		{

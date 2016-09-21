@@ -18,6 +18,6 @@ namespace lotusjeff\socialshare;
 * class extends, but you can overwrite them to give special
 * instructions for those cases.
 */
-//class ext extends \phpbb\extension\base
-//{
-//}
+class ext extends \phpbb\extension\base
+{
+}
