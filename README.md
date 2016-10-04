@@ -14,7 +14,7 @@ Extension for phpBB 3.1 to facilitate social media posting. This extension suppo
 		- Navigation bar in alignment with breadcrumbs
 		- First post of each Topic page.
 		- Footer of Page
-		- Hover outside of content (left edge of browser, right edge of browser, left of forum content, hieght of hover from top of browser)
+		- Hover outside of content (left edge of browser, right edge of browser, left of forum content, height of hover from top of browser)
 	- 2 locations are user defined
 		- Code is provided to add social share icons within your theme at your preferred locations
 		- Ability to control icon size and alignment from within settings
@@ -30,7 +30,7 @@ Extension for phpBB 3.1 to facilitate social media posting. This extension suppo
 - Ability to choose a random image or a default image if no images are found on page.
 
 ## Screen Shots
-![Topic Page - Eaxmple One] (example1.jpg) 
+![Topic Page - Example One] (example1.jpg) 
 `Topic Page - Example One`
 ![Topic Page - Example Two] (example2.jpg) 
 `Topic Page - Example Two`
@@ -46,7 +46,7 @@ Extension for phpBB 3.1 to facilitate social media posting. This extension suppo
 
 #### Download Method
 - [Download the latest release](https://github.com/LotusJeff/socialshare) and unzip it.
-- Unzip the downloaded files and copy it to the `ext` directory of your phpBB board. The directory strcuture should be phpBB3/ext/lotusjeff/socialshare
+- Unzip the downloaded files and copy it to the `ext` directory of your phpBB board. The directory structure should be **phpBB3/ext/lotusjeff/socialshare**
 - Navigate in the ACP to `Customise -> Manage extensions`.
 - Look for Social Share w/ Dynamic OpenGraph Tags under the Disabled Extensions list, and click `Enable` link.
 
@@ -86,7 +86,7 @@ git pull
 
 ## Uninstallation
 - Navigate in the ACP to `Customise -> Manage extensions`.
-- Click the `Disable` link for Fancybox.
+- Click the `Disable` link for Social Share.
 - To permanently uninstall, click `Delete Data`, then delete the `socialshare` folder from `phpBB3/ext/lotusjeff/`.
 
 ## Problems

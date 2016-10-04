@@ -1,8 +1,8 @@
 <?php
 /**
 *
-* @package phpBB Extension - RH Topic Tags
-* @copyright (c) 2014 Robet Heim
+* @package phpBB Extension - Social Share
+* @copyright (c) 2016 Jeff Cocking
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */

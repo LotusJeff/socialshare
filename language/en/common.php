@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Dyanmic Opengraph and Twitter Meta tags extension for the phpBB Forum Software package.
+ * Social Share
  *
  * @copyright (c) 2015 Jeff Cocking
  * @license GNU General Public License, version 2 (GPL-2.0)
