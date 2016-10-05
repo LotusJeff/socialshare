@@ -1,12 +1,11 @@
 <?php
 /**
- *
- * Dyanmic Opengraph and Twitter Meta tags extension for the phpBB Forum Software package.
- *
- * @copyright (c) 2015 Jeff Cocking
- * @license GNU General Public License, version 2 (GPL-2.0)
- *
- */
+*
+* @package phpBB Extension - Social Share
+* @copyright (c) 2016 Jeff Cocking
+* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+*
+*/
 
 /**
  * DO NOT CHANGE
