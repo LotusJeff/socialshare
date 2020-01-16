@@ -2,6 +2,8 @@
 
 # Social Sharing with OpenGraph Metatags (Facebook) for phpBB 3.1
 
+# This is an abandon project. You are welcome to fork it.
+
 Extension for phpBB 3.1 to facilitate social media posting. This extension supports 15 different social media sites. Supports dynamically creating Opengraph tags to provide Title, Description, Images and URL for all pages.
 
 ##	Features
